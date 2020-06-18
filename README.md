@@ -4,9 +4,9 @@ This repository is for code samples that were demonstrated in the InterSystems I
 
 ## PEX - Extending Interoperability Productions with custom code
 
-[s3-businessoperation-java] is an Java-based example of how to use AWS S3 as a Business Operation (output) in an interoperability production.  
+[s3-businessoperation-java](s3-businessoperation-java) is an Java-based example of how to use AWS S3 as a Business Operation (output) in an interoperability production.  
 
 ## Using .NET from ObjectScript
 
-Many users of InterSystems IRIS develop applications in ObjectScript.  But what if you want to take advantage of existing Java or .NET code?  [kafka-from-objectscript-dotnet] is a demonstration of how to call an Apache Kafka application with ObjectScript.
+Many users of InterSystems IRIS develop applications in ObjectScript.  But what if you want to take advantage of existing Java or .NET code?  [kafka-from-objectscript-dotnet](kafka-from-objectscript-dotnet) is a demonstration of how to call an Apache Kafka application with ObjectScript.
 
