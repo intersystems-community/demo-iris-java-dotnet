@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="IRIS" version="26" zv="IRIS for Windows (x86-64) 2020.1 (Build 209U)" ts="2020-06-17 08:45:24">
+<Project name="EnsExportProduction_2020-06-17 08-44-23_483-4" LastModified="2020-06-17 08:45:24.925054">
+  <ProjectDescription>Studio Project generated from Production 'Webinar.s3demo' at 2020-06-17 12:44:23.483 UTC</ProjectDescription>
+  <Items>
+    <ProjectItem name="Webinar.s3demo" type="CLS"></ProjectItem>
+    <ProjectItem name="EnsExportNotes.EnsExportProduction_2020-06-17 08-44-23_483-4.PTD" type="PTD"></ProjectItem>
+  </Items>
+</Project>
+
+
+<Class name="Webinar.s3demo">
+<Super>Ens.Production</Super>
+<TimeChanged>65546,37876.903065</TimeChanged>
+<TimeCreated>65545,55741.758257</TimeCreated>
+
+<XData name="ProductionDefinition">
+<Data><![CDATA[
+<Production Name="Webinar.s3demo" LogGeneralTraceEvents="false">
+  <Description></Description>
+  <ActorPoolSize>2</ActorPoolSize>
+  <Item Name="DirectoryWatcher" Category="" ClassName="EnsLib.File.PassthroughService" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
+    <Setting Target="Adapter" Name="ArchivePath">C:\MyApps\Archive\</Setting>
+    <Setting Target="Adapter" Name="FilePath">C:\MyApps\In\</Setting>
+    <Setting Target="Adapter" Name="WorkPath">C:\MyApps\WorkPath\</Setting>
+    <Setting Target="Host" Name="TargetConfigNames">DemoS3BusinessOperation</Setting>
+  </Item>
+  <Item Name="SendToS3" Category="" ClassName="EnsLib.PEX.BusinessOperation" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
+    <Setting Target="Host" Name="%gatewayPort">55555</Setting>
+    <Setting Target="Host" Name="%remoteClassname">com.intersystems.demo.pex.MyBusinessOperation</Setting>
+    <Setting Target="Host" Name="%remoteSettings">bucket=isc-bob-demo</Setting>
+    <Setting Target="Host" Name="%gatewayExtraClasspaths">C:\Users\rkuszews\Iris\LanguageInterop\s3-businessoperation\target\intersystems-demo-PEX-3.1.0.jar</Setting>
+  </Item>
+</Production>
+]]></Data>
+</XData>
+</Class>
+
+
+<Document name="EnsExportNotes.EnsExportProduction_2020-06-17 08-44-23_483-4.PTD"><ProjectTextDocument name="EnsExportNotes.EnsExportProduction_2020-06-17 08-44-23_483-4" description="Export Notes for export EnsExportProduction_2020-06-17 08-44-23_483-4">
+<![CDATA[<Deployment>
+<Creation>
+<Machine>USVMRKUSZEWS.ISCINTERNAL.COM</Machine>
+<Instance>IRIS</Instance>
+<Namespace>PRODUCTIONSTEST</Namespace>
+<SourceProduction>Webinar.s3demo</SourceProduction>
+<Username>UnknownUser</Username>
+<UTC>2020-06-17 12:45:24.901</UTC>
+</Creation>
+<Notes>
+</Notes>
+<Contents>
+<ExportProject>EnsExportProduction_2020-06-17 08-44-23_483-4</ExportProject>
+<Item num="1">Webinar.s3demo.CLS</Item>
+</Contents>
+<ProductionClassInExport>Webinar.s3demo</ProductionClassInExport>
+</Deployment>
+
+]]></ProjectTextDocument>
+</Document></Export>
